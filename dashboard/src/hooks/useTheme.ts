@@ -7,13 +7,7 @@ const THEME_KEY = 'openwa_theme';
 const PALETTE_KEY = 'openwa_palette';
 
 export const paletteOptions: Array<{ value: ThemePalette; label: string; color: string }> = [
-  { value: 'openwa', label: 'OpenWA', color: '#25d366' },
-  { value: 'blue', label: 'Blue', color: '#2563eb' },
-  { value: 'graphite', label: 'Graphite', color: '#64748b' },
-  { value: 'indigo', label: 'Indigo', color: '#4f46e5' },
-  { value: 'amber', label: 'Amber', color: '#d97706' },
-  { value: 'rose', label: 'Rose', color: '#e11d48' },
-  { value: 'teal', label: 'Teal', color: '#0d9488' },
+  { value: 'openwa', label: 'Default', color: '#6366F1' },
 ];
 
 function isTheme(value: string | null): value is Theme {

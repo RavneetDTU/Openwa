@@ -85,7 +85,7 @@ button:hover {
 button:focus-visible,
 a:focus-visible,
 [tabindex]:focus-visible {
-  outline: 2px solid var(--primary, #25d366);
+  outline: 2px solid var(--primary, #6366F1);
   outline-offset: 2px;
 }
 button:focus:not(:focus-visible) {
@@ -127,12 +127,12 @@ select {
 }
 
 select:hover {
-  border-color: var(--primary, #25d366);
+  border-color: var(--primary, #6366F1);
 }
 
 select:focus {
   outline: none;
-  border-color: var(--primary, #25d366);
+  border-color: var(--primary, #6366F1);
   box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.1);
 }
 
@@ -239,7 +239,7 @@ select:disabled {
 
 .modal-body input:focus {
   outline: none;
-  border-color: var(--primary, #25d366);
+  border-color: var(--primary, #6366F1);
   background: var(--bg-white, #fff);
   box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.1);
 }

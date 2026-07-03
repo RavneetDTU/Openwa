@@ -37,6 +37,7 @@
   width: 127px;
   height: 127px;
   object-fit: contain;
+  background-color: #ffffff;
 }
 
 .login-container .version-info{

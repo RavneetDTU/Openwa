@@ -1,29 +1,29 @@
-import { useState, useEffect, useRef, type CSSProperties } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import {
-  LayoutDashboard,
-  Smartphone,
-  MessageSquare,
-  Webhook,
-  Key,
-  FileText,
-  ClipboardList,
-  LogOut,
-  Send,
-  Server,
-  Puzzle,
-  Sun,
-  Moon,
-  Monitor,
-  Menu,
-  X,
   ChevronLeft,
   ChevronRight,
+  ClipboardList,
+  FileText,
+  Key,
   Languages,
+  LayoutDashboard,
+  LogOut,
+  Menu,
+  MessageSquare,
+  Monitor,
+  Moon,
+  Puzzle,
+  Send,
+  Server,
+  Smartphone,
+  Sun,
+  Webhook,
+  X,
 } from 'lucide-react';
-import { useTheme } from '../hooks/useTheme';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
+import { useTranslation } from 'react-i18next';
+import { NavLink, Outlet } from 'react-router-dom';
 import { type UserRole } from '../hooks/useRole';
+import { useTheme } from '../hooks/useTheme';
 import { languageOptions, resolveSupportedLanguage, rtlLanguages, type SupportedLanguage } from '../i18n';
 import { healthApi } from '../services/api';
 import './Layout.css';
@@ -164,7 +164,7 @@ export function Layout({ onLogout, userRole }: LayoutProps) {
             {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
           <div className="mobile-brand">
-            <img src="/openwa_logo.webp" alt="OpenWA" className="sidebar-logo" />
+            <img src="/logo.svg" alt="OpenWA" className="sidebar-logo" />
             <span className="brand-name">{t('common.appName')}</span>
           </div>
           <div style={{ width: 40 }} />
@@ -177,7 +177,7 @@ export function Layout({ onLogout, userRole }: LayoutProps) {
         className={`sidebar ${isCollapsed ? 'collapsed' : ''} ${isMobile ? 'mobile' : ''} ${isMobileOpen ? 'open' : ''}`}
       >
         <div className="sidebar-header">
-          <img src="/openwa_logo.webp" alt="OpenWA" className="sidebar-logo" />
+          <img src="/logo.svg" alt="OpenWA" className="sidebar-logo" />
           {!isCollapsed && (
             <div className="sidebar-brand">
               <span className="brand-name">{t('common.appName')}</span>

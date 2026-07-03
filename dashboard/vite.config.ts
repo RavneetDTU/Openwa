@@ -1,7 +1,7 @@
+import react from '@vitejs/plugin-react';
 import { readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
 
 // Single source of truth for the version shown in the dashboard: read it from
 // package.json at build time so the Login screen always reflects the actual

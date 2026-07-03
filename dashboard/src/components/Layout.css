@@ -41,6 +41,7 @@
   height: 28px;
   object-fit: contain;
   flex-shrink: 0;
+  background-color: #ffffff;
 }
 
 .mobile-brand .sidebar-logo {
